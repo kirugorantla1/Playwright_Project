@@ -1,0 +1,15 @@
+
+{
+    "username": "KiranKumar@gmail.com",
+    "password": "admin123",
+    "name": "Kiran",
+    "address": {
+                "city":"Hyderabad",
+                "pincode": "500049"
+
+
+    }
+
+
+
+}
