@@ -7,6 +7,7 @@ test("To test Testdata", async({page})=>{
 
     await page.goto("https://freelance-learn-automation.vercel.app/login")
     await page.getByPlaceholder("Enter Email").fill(testdata.username);
-    await page.waitForLoadState("networkidle")
+    await page.waitForLoadState("networkidle") 
+    
 
 })
