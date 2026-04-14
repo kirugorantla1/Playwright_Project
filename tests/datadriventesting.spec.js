@@ -11,6 +11,7 @@ test.describe("Data driven login test", () => {
 
             await page.goto("https://freelance-learn-automation.vercel.app/login");
             await page.locator("#email1").fill(data.username);
+            await page.pause();
 
         });
 
