@@ -1,0 +1,175 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Evrgreen_test.spec.js >> The first test case is
+- Location: tests\Evrgreen_test.spec.js:3:5
+
+# Error details
+
+```
+TypeError: Cannot read properties of undefined (reading 'unicode')
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Evergreen Shop" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e10]: Evergreen Shop
+      - navigation [ref=e11]:
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - button "Home" [ref=e13]
+        - link "Shopping Cart" [ref=e14] [cursor=pointer]:
+          - /url: /cart
+          - button "Shopping Cart" [ref=e15]:
+            - img
+            - generic [ref=e16]: Shopping Cart
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - img "Lush green leaves" [ref=e20]
+        - generic [ref=e21]:
+          - heading "Welcome to Evergreen Shop" [level=1] [ref=e22]
+          - paragraph [ref=e23]: Discover fresh, quality products for a vibrant life.
+      - generic [ref=e25]:
+        - heading "Our Products" [level=2] [ref=e26]
+        - generic [ref=e27]:
+          - button "All" [ref=e28] [cursor=pointer]
+          - button "Groceries" [ref=e29] [cursor=pointer]
+          - button "Bakery" [ref=e30] [cursor=pointer]
+          - button "Beverages" [ref=e31] [cursor=pointer]
+          - button "Household" [ref=e32] [cursor=pointer]
+          - button "Home Decor" [ref=e33] [cursor=pointer]
+          - button "Lifestyle" [ref=e34] [cursor=pointer]
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - link "Organic Avocado" [ref=e38] [cursor=pointer]:
+              - /url: /products/1
+              - img "Organic Avocado" [ref=e39]
+            - generic [ref=e40]:
+              - link "Organic Avocado" [ref=e41] [cursor=pointer]:
+                - /url: /products/1
+                - generic [ref=e42]: Organic Avocado
+              - paragraph [ref=e43]: $1.99
+            - button "Add Organic Avocado to cart" [ref=e45] [cursor=pointer]:
+              - img
+              - text: Add to Cart
+          - generic [ref=e46]:
+            - link "Artisan Sourdough Bread" [ref=e48] [cursor=pointer]:
+              - /url: /products/2
+              - img "Artisan Sourdough Bread" [ref=e49]
+            - generic [ref=e50]:
+              - link "Artisan Sourdough Bread" [ref=e51] [cursor=pointer]:
+                - /url: /products/2
+                - generic [ref=e52]: Artisan Sourdough Bread
+              - paragraph [ref=e53]: $5.49
+            - button "Add Artisan Sourdough Bread to cart" [ref=e55] [cursor=pointer]:
+              - img
+              - text: Add to Cart
+          - generic [ref=e56]:
+            - link "Cold Brew Coffee Concentrate" [ref=e58] [cursor=pointer]:
+              - /url: /products/3
+              - img "Cold Brew Coffee Concentrate" [ref=e59]
+            - generic [ref=e60]:
+              - link "Cold Brew Coffee Concentrate" [ref=e61] [cursor=pointer]:
+                - /url: /products/3
+                - generic [ref=e62]: Cold Brew Coffee Concentrate
+              - paragraph [ref=e63]: $12.00
+            - button "Add Cold Brew Coffee Concentrate to cart" [ref=e65] [cursor=pointer]:
+              - img
+              - text: Add to Cart
+          - generic [ref=e66]:
+            - link "Eco-Friendly Cleaning Spray" [ref=e68] [cursor=pointer]:
+              - /url: /products/4
+              - img "Eco-Friendly Cleaning Spray" [ref=e69]
+            - generic [ref=e70]:
+              - link "Eco-Friendly Cleaning Spray" [ref=e71] [cursor=pointer]:
+                - /url: /products/4
+                - generic [ref=e72]: Eco-Friendly Cleaning Spray
+              - paragraph [ref=e73]: $7.99
+            - button "Add Eco-Friendly Cleaning Spray to cart" [ref=e75] [cursor=pointer]:
+              - img
+              - text: Add to Cart
+          - generic [ref=e76]:
+            - link "Lavender Scented Soy Candle" [ref=e78] [cursor=pointer]:
+              - /url: /products/5
+              - img "Lavender Scented Soy Candle" [ref=e79]
+            - generic [ref=e80]:
+              - link "Lavender Scented Soy Candle" [ref=e81] [cursor=pointer]:
+                - /url: /products/5
+                - generic [ref=e82]: Lavender Scented Soy Candle
+              - paragraph [ref=e83]: $18.50
+            - button "Add Lavender Scented Soy Candle to cart" [ref=e85] [cursor=pointer]:
+              - img
+              - text: Add to Cart
+          - generic [ref=e86]:
+            - link "Stainless Steel Water Bottle" [ref=e88] [cursor=pointer]:
+              - /url: /products/6
+              - img "Stainless Steel Water Bottle" [ref=e89]
+            - generic [ref=e90]:
+              - link "Stainless Steel Water Bottle" [ref=e91] [cursor=pointer]:
+                - /url: /products/6
+                - generic [ref=e92]: Stainless Steel Water Bottle
+              - paragraph [ref=e93]: $24.95
+            - button "Add Stainless Steel Water Bottle to cart" [ref=e95] [cursor=pointer]:
+              - img
+              - text: Add to Cart
+          - generic [ref=e96]:
+            - link "Gourmet Olive Oil" [ref=e98] [cursor=pointer]:
+              - /url: /products/7
+              - img "Gourmet Olive Oil" [ref=e99]
+            - generic [ref=e100]:
+              - link "Gourmet Olive Oil" [ref=e101] [cursor=pointer]:
+                - /url: /products/7
+                - generic [ref=e102]: Gourmet Olive Oil
+              - paragraph [ref=e103]: $15.99
+            - button "Add Gourmet Olive Oil to cart" [ref=e105] [cursor=pointer]:
+              - img
+              - text: Add to Cart
+          - generic [ref=e106]:
+            - link "Handmade Ceramic Mug" [ref=e108] [cursor=pointer]:
+              - /url: /products/8
+              - img "Handmade Ceramic Mug" [ref=e109]
+            - generic [ref=e110]:
+              - link "Handmade Ceramic Mug" [ref=e111] [cursor=pointer]:
+                - /url: /products/8
+                - generic [ref=e112]: Handmade Ceramic Mug
+              - paragraph [ref=e113]: $22.00
+            - button "Add Handmade Ceramic Mug to cart" [ref=e115] [cursor=pointer]:
+              - img
+              - text: Add to Cart
+  - contentinfo [ref=e116]:
+    - paragraph [ref=e118]: © 2026 Evergreen Shop. All rights reserved.
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=e119]
+```
+
+# Test source
+
+```ts
+  1  | import {test, expect} from '@playwright/test'
+  2  | 
+  3  | test("The first test case is", async({page})=>{
+  4  | 
+  5  |     await page.goto("https://evergreen-shop-firebase.vercel.app/");
+> 6  |     const products = await page.locator("//div[@class='flex justify-center flex-wrap gap-2 mb-8']").getByText();
+     |                                                                                                     ^ TypeError: Cannot read properties of undefined (reading 'unicode')
+  7  |         console.log(products)
+  8  |         await expect(products).toContainText("Groceries")
+  9  |     
+  10 | 
+  11 | 
+  12 | 
+  13 | })
+```

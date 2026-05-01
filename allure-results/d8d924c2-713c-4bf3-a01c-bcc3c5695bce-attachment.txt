@@ -1,0 +1,9 @@
+[
+  'All',
+  'Groceries',
+  'Bakery',
+  'Beverages',
+  'Household',
+  'Home Decor',
+  'Lifestyle'
+]

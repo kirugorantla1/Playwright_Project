@@ -1,0 +1,1 @@
+Screenshot saved: screenshots/Login_should_succeed.png
